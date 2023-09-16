@@ -34,7 +34,66 @@
   color: red;
 }
 
-.container--image{
-    display: flex;
-    justify-content: center;
+.container--section-technologies {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.container--image {
+  display: flex;
+  justify-content: center;
+}
+.container-technologies {
+  /* width: 95%; */
+  /* background-color: yellow; */
+  display: inline;
+  /* padding: 100px 40px; */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card--technology {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(76, 76, 206);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgb(0 0 0/50%);
+}
+
+.card--technology-img {
+  margin-top: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.card--technology:hover > img {
+  transition: 1s;
+  transform: scale(1.2);
+}
+.card--technology:hover > .transparent {
+  visibility: inherit;
+  z-index: 1000;
+}
+.transparent {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(82, 82, 82, 0.514);
+  visibility: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transparent > p {
+  font-size: 30px;
+  color: white;
 }
